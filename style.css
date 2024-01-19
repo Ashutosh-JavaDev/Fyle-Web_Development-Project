@@ -29,7 +29,6 @@ body{
 .content{
     border: black solid 0.2px;
     width:fit-content;
-    /* display: block; */
     height: 100%;
     padding: 0.4rem;
     display: grid;
@@ -149,9 +148,8 @@ button{
         width: 100%;
     }
 }
-@media (max-width:800px){
+@media(max-width:800px){
     .content{
         border: none;
-        /* height:300vh; */
     }
 }
