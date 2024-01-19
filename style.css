@@ -64,11 +64,23 @@ body{
         border-radius:100%;
     }
 }
+.box1 a{
+    color: blue;
+}
 a{
     color: black;
     font-family: "Grape Nuts", cursive;
     font-weight: bold;
     letter-spacing: 2px;
+    text-decoration: none;
+}
+.box2{
+    border: solid green;
+    display: grid;
+    grid-template-columns: 2fr;
+}
+.hero{
+    border: solid blue;
 }
 @media(max-width:500px){
     .data{
