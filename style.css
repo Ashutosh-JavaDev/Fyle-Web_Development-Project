@@ -15,7 +15,7 @@ body{
         font-style: normal;
       }
       font-family: "Dancing Script", cursive;
-      /* background: #000000f3; */
+      background: rgba(207, 207, 207, 0.425);
       /* color: white; */
 }
 .container{
@@ -106,9 +106,10 @@ h3{
 }
 .hero{
     padding: 0.5rem;
-    border: solid 0.3px black;
+    /* border: solid 0.3px black; */
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 2px 5px;
     gap:0.5rem;
     justify-content: center;
     align-items: center;
