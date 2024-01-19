@@ -77,7 +77,7 @@ a{
 .box2{
     border: solid green;
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns:2fr;
 }
 .hero{
     border: solid blue;
