@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grape+Nuts&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -19,9 +20,16 @@ body{
 }
 .container{
     padding: 1rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .content{
     border: black solid 0.2px;
+    width:fit-content;
+    height: 100%;
     padding: 0.4rem;
     display: grid;
     grid-template-rows: repeat(autofit,minmax(150px,500px));
@@ -30,7 +38,7 @@ body{
     gap: 2rem;
 }
 .box1{
-    border: solid red;
+    /* border: solid red; */
     display: grid;
     gap: 0.6rem;
     padding: 0.4rem;
@@ -38,7 +46,7 @@ body{
     align-items: center;
 }
 .profile1{
-    border: solid green;
+    /* border: solid green; */
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -50,9 +58,12 @@ body{
     width:200px;
     height:200px;
     border-radius:100%;
+    box-shadow: -3px 3px 5px;
+    border: 3px rgb(36, 14, 14) solid;
+    padding:0.5rem;
 }
 .data{
-    border: solid blue;
+    /* border: solid blue; */
     width:50%;
     padding: 1.2rem;
     display: grid;
@@ -68,18 +79,18 @@ body{
     }
 }
 .box1 a{
-    color: blue;
+    color: black;
     font-family: "Grape Nuts", cursive;
 }
 a{
     color: white;
     font-weight: bold;
-    font-family: "Dancing Script", cursive;
+    font-family: "Jost", sans-serif;
     letter-spacing: 2px;
     text-decoration: none;
 }
 .box2{
-    border: solid green;
+    /* border: solid green; */
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,500px));
     justify-content: space-evenly;
@@ -89,6 +100,9 @@ a{
 }
 h2{
     font-size:2rem;
+}
+h3{
+    font-size: 2.5rem;
 }
 .hero{
     padding: 0.5rem;
@@ -106,14 +120,26 @@ h2{
     gap: 0.5rem;
     justify-content: space-evenly;
 }
+button:hover{
+    background-color: rgba(15, 81, 107, 0.932);
+
+}
+.nav a{
+    font-size:0.9rem;
+}
+.hero p{
+    font-size:0.8rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 p{
     line-height: 1.5rem;
 }
 button{
-    padding:1rem;
-    background-color: rgba(4, 33, 196, 0.932);
+    padding:0.3rem 1rem;
+    background-color: rgba(19, 119, 158, 0.932);
     border: none;
-    border-radius: 100%;
+    border-radius:10%;
+    transition: all 0.2s;
     cursor: pointer;
 }
 @media(max-width:500px){
